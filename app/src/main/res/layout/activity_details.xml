@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hu.ait.weatherapp.DetailsActivity">
+
+    <TextView
+        android:id="@+id/tvCityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="city name"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tvCityMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCityName"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="main"
+        android:textSize="40dp"
+        />
+
+    <TextView
+        android:id="@+id/tvCityDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCityMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="description"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvCityTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCityDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="90^o C"
+        android:textSize="70dp"
+        />
+
+    <TextView
+        android:id="@+id/tvCityTempMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvCityTemp"
+        app:layout_constraintEnd_toStartOf="@id/tvCityTemp"
+        app:layout_constraintBottom_toBottomOf="@id/tvCityTemp"
+        android:text="90^o C"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvCityTempMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tvCityTemp"
+        app:layout_constraintTop_toTopOf="@id/tvCityTemp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tvCityTemp"
+        android:text="90^o C"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvCityFeelsLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCityTemp"
+        android:text="Feels like: 90^o C"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvCityVisibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCityTemp"
+        android:text="Visibility: 90^o C"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvCityHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCityFeelsLike"
+        android:text="Humidity: 90^o C"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvCityPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCityFeelsLike"
+        android:text="Pressure: 90^o C"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvCityWindSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCityHumidity"
+        android:text="Wind Speed: 90^o C"
+        android:textSize="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

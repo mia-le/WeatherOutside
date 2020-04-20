@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Weather App</string>
+
+    <string-array name="categories">
+        <item>Food</item>
+        <item>Clothing</item>
+        <item>Appliances</item>
+    </string-array>
+
+    <string name="action_settings">Settings</string>
+    <string name="btn_delete_all">Delete All</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="bought">Bought?</string>
+    <string name="dialog_name">Create Entry</string>
+    <string name="dialog_name_edit">Edit Entry</string>
+    <string name="dialog_guide">Click here to create new items</string>
+    <string name="error_not_handled">The Activity is not implementing the TodoHandler interface.</string>
+</resources>
