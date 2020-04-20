@@ -39,7 +39,7 @@ class ScrollingActivity : AppCompatActivity(), CityDialog.CityHandler {
         var pushAnim = AnimationUtils.loadAnimation(this, R.anim.push_animation)
 
         btnDeleteAll.setOnClickListener{
-                    weatherAdapter.deleteAll()
+            weatherAdapter.deleteAll()
             btnDeleteAll.startAnimation(pushAnim)
         }
 
@@ -72,17 +72,17 @@ class ScrollingActivity : AppCompatActivity(), CityDialog.CityHandler {
 
     private fun initRecyclerView() {
 
-                var cityList = mutableListOf<City>()
-                weatherAdapter = WeatherAdapter(this, cityList)
-                recyclerCity.adapter = weatherAdapter
-                val touchCallbackList = CityReyclerTouchCallback(weatherAdapter)
-                val itemTouchHelper = ItemTouchHelper(touchCallbackList)
-                itemTouchHelper.attachToRecyclerView(recyclerCity)
+        var cityList = mutableListOf<City>()
+        weatherAdapter = WeatherAdapter(this, cityList, this as ScrollingActivity)
+        recyclerCity.adapter = weatherAdapter
+        val touchCallbackList = CityReyclerTouchCallback(weatherAdapter)
+        val itemTouchHelper = ItemTouchHelper(touchCallbackList)
+        itemTouchHelper.attachToRecyclerView(recyclerCity)
 
-                val itemDecorator = DividerItemDecoration(
-                    this, DividerItemDecoration.VERTICAL
-                )
-                recyclerCity.addItemDecoration(itemDecorator)
+        val itemDecorator = DividerItemDecoration(
+            this, DividerItemDecoration.VERTICAL
+        )
+        recyclerCity.addItemDecoration(itemDecorator)
 
     }
 
@@ -99,7 +99,6 @@ class ScrollingActivity : AppCompatActivity(), CityDialog.CityHandler {
     override fun cityCreated(city: City) {
         saveTodo(city)
     }
-
 
     override fun onBackPressed() {
         this.finishAffinity()

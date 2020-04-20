@@ -20,7 +20,7 @@ class SplashActivity : AppCompatActivity() {
             override fun onAnimationEnd(animation: Animation?) {
                 var intentScroll = Intent()
 
-                intentScroll.setClass(this@SplashActivity, ScrollingActivity::class.java)
+                intentScroll.setClass(this as SplashActivity, ScrollingActivity::class.java)
 
                 startActivity(intentScroll)
             }

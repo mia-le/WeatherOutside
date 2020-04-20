@@ -44,6 +44,11 @@ class CityDialog : DialogFragment() {
 
         dialogBuilder.setView(dialogView)
 
+        dialogBuilder.setPositiveButton("Ok") { dialog, which ->
+        }
+        dialogBuilder.setNegativeButton("Cancel") { dialog, which ->
+        }
+
         return dialogBuilder.create()
     }
 
